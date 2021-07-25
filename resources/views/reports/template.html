@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ $page_title ?? 'Title here' }}</title>
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ URL::asset('css/report.css') }}">
+</head>
+<body>
+    <div id="app">
+        <div class="" id="holder">
+            <table class="table-hover">
+                <thead>
+                  <tr>
+                    <th colspan="7" class="table-header"><b>General Manager</b></th>
+                  </tr>
+                  <tr>
+                    <th><b>Last Name</b></th>
+                    <th><b>First Name</b></th>
+                    <th><b>Local No.</b></th>
+                    <th><b>Direct Line No</b></th>
+                    <th><b>Fax No</b></th>
+                    <th><b>Email Address</b></th>
+                  </tr>
+                </thead>
+                <tbody>
+                      
+                      <tr>
+                        <td>Del Rosario</td>
+                        <td>Roberto</td>
+                        <td>8896</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>Roberto.Delrosario@coscon.com</td>
+                      </tr>
+            
+                </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
